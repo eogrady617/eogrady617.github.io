@@ -19,23 +19,14 @@ urls:
 - text: Home
   url: "/"
   display: true
-- text: Biography
-  url: "/biography/"
-  display: true
-- text: Résumé
-  url: "/resume.pdf"
-  display: true
 - text: Projects
-  url: "/projects"
-- text: CV
-  url: "/cv/"
-- text: Publications and Talks
-  url: "/pubs/"
+  url: "/projects/"
+  display: true
+- text: Resume
+  url: "/resume/"
   display: true
 - text: Coursework
   url: "/coursework/"
-- text: FAQ
-  url: "/faq/"
   display: true
 - text: Feedback
   url: "/feedback/"
@@ -64,15 +55,13 @@ author_education_details:
 - college_logo: mu.png
   college_name: Manhattan University
   dates: 2021 - 2025
-  college_degree: B.S. Computer Engineering
+  college_degree: B.S. in Computer Engineering
   description: Add details about your education, focus areas, and achievements.
   visibility: true
 accomplishments:
 - Add your accomplishments and milestones here
 github_username: your_github_username
 linkedin_username: your_linkedin_username
-facebook_username: your_facebook_username
-twitter_username: your_twitter_username
 disqus_shortname: your_disqus_shortname
 formspree_email: your.email@example.com
 new_formspring_endpoint: your_formspring_id
@@ -83,8 +72,6 @@ google_analytics: ''
 show_author_work_experiences: true
 show_author_education_details: true
 show_author_project_details: true
-show_accomplishments: true
-show_namespace_collision: true
 plugins:
 - jekyll-paginate
 - jekyll-gist
