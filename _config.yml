@@ -1,0 +1,100 @@
+---
+title: Your Name Here
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  products:
+    title: Products
+    output: false
+  uploads:
+    title: Uploads
+    output: true
+email: your.email@example.com
+description: Your name's webpage, projects, biography, resume, and FAQ
+baseurl: ''
+url: //eogrady617.github.io
+urls:
+- text: Home
+  url: "/"
+  display: true
+- text: Biography
+  url: "/biography/"
+  display: true
+- text: Résumé
+  url: "/resume.pdf"
+  display: true
+- text: Projects
+  url: "/projects"
+- text: CV
+  url: "/cv/"
+- text: Publications and Talks
+  url: "/pubs/"
+  display: true
+- text: Coursework
+  url: "/coursework/"
+- text: FAQ
+  url: "/faq/"
+  display: true
+- text: Feedback
+  url: "/feedback/"
+  display: true
+author_logo: profile.png
+author: Your Name Here
+author_bio: Add your bio here. Tell visitors about yourself and your background.
+author_bio2: Add more details about your background, career path, interests, and expertise.
+author_bio3: For a more formal biography, check out <a href="/biography/">my biography</a>.
+author_location: Your City, State
+author_website_url: eogrady617.github.io
+author_work_experiences:
+- company_name: Company Name
+  company_logo: company_logo.png
+  dates: Start Date - End Date
+  designation: Your Job Title
+  description:
+  - Add your key accomplishments and responsibilities here
+  visibility: true
+author_education_details:
+- college_logo: school_logo.png
+  college_name: University Name
+  college_degree: Your Degree
+  description: Add details about your education, focus areas, and achievements.
+  visibility: true
+accomplishments:
+- Add your accomplishments and milestones here
+github_username: your_github_username
+linkedin_username: your_linkedin_username
+facebook_username: your_facebook_username
+twitter_username: your_twitter_username
+disqus_shortname: your_disqus_shortname
+formspree_email: your.email@example.com
+new_formspring_endpoint: your_formspring_id
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+google_analytics: ''
+show_author_work_experiences: true
+show_author_education_details: true
+show_author_project_details: true
+show_accomplishments: true
+show_namespace_collision: true
+plugins:
+- jekyll-paginate
+- jekyll-gist
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-algolia
+- jekyll-redirect-from
+paginate_path: "/projects/page:num/"
+paginate: 12
+compress_html:
+  clippings: all
+  comments:
+  - "<!-- "
+  - " -->"
+  endings: all
+  ignore:
+    envs:
+    - development

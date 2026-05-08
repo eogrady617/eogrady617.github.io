@@ -1,0 +1,29 @@
+---
+permalink: "/projects/categories/"
+layout: page
+---
+
+<h3>  {{ page.title }} </h3>
+
+<div id="categories">
+  {% for category in site.categories %}
+    <div class="category-box" >
+      {% capture category_name %}{{ category | first }}{% endcapture %}
+      <div id="#{{ category_name | replace: "_", " "  | downcase }}"></div>
+
+      <h4 class="category-head">
+        <a href="{{ site.baseurl }}/projects/categories/{{ category_name | downcase}}">
+        {{ category_name | replace: "_", " " | downcase}}</a>
+      </h4>
+
+      <a name="{{ category_name | replace: "_", " "  | downcase }}"></a>
+
+      {% for post in site.categories[category_name] %}
+        <article class="center">
+          <h6 ><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h6>
+          </article>
+      {% endfor %}
+
+    </div>
+  {% endfor %}
+</div>
