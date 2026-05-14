@@ -81,15 +81,12 @@ show_author_work_experiences: true
 show_author_education_details: true
 show_author_project_details: true
 plugins:
-- jekyll-paginate
 - jekyll-gist
 - jekyll-seo-tag
 - jekyll-sitemap
 - jekyll-feed
 - jekyll-algolia
 - jekyll-redirect-from
-paginate_path: "/projects/page:num/"
-paginate: 12
 compress_html:
   clippings: all
   comments:
