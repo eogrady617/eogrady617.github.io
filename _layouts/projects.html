@@ -14,16 +14,22 @@ layout: default
           {% assign sorted_projects = site.projects | sort: "number" %}
 
           {% for project in sorted_projects %}
-          <a href="{{ project.url }}" class="post-btn" id="post-btn-{{ project.number }}">
-            <div class="card projects-post text-center" id="card-projects-post-{{ project.number }}">
-              {% assign project_thumbnail = project.thumbnail | default: '/assets/img/project-placeholder.svg' %}
-              <img src="{{ project_thumbnail }}" class="project-img" alt="{{ project.title }}">
-              <p id="post-title-text-{{ project.number }}">{{ project.title }}</p>
-              {% if project.summary %}
-              <p class="project-summary">{{ project.summary | strip_html | truncatewords: 18 }}</p>
-              {% endif %}
-            </div>
-          </a>
+          <div class="col-12 col-md-6 project-grid-col">
+            <a href="{{ project.url }}" class="post-btn" id="post-btn-{{ project.number }}">
+              <div class="card projects-post text-center" id="card-projects-post-{{ project.number }}">
+                {% assign project_thumbnail = project.thumbnail | default: '/assets/img/project-placeholder.svg' %}
+                <div class="project-image-wrapper">
+                  <img src="{{ project_thumbnail }}" class="project-img" alt="{{ project.title }}">
+                  <div class="project-overlay-text">
+                    <p id="post-title-text-{{ project.number }}">{{ project.title }}</p>
+                    {% if project.card_subtitle %}
+                    <p class="project-card-subtitle">{{ project.card_subtitle }}</p>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
           {% endfor %}
         </div>
       </div>
