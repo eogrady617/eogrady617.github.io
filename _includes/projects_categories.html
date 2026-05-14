@@ -1,8 +1,17 @@
-{% for category in site.categories %}
-  {% capture category_name %}{{ category | first }}{% endcapture %}
-  <div id="#{{ category_name | replace: "_", " " }}"></div>
-  <li class="category-head">
-      <a href="{{ site.baseurl }}/projects/categories/{{ category_name}}">{{ category_name | replace: "_", " " }}</a>
-  </li>
-  <a name="{{category_name}}"></a>
+{% capture categories_list %}{% for project in site.projects %}{% for category in project.categories %}{{ category }}|{% endfor %}{% endfor %}{% endcapture %}
+{% assign categories = categories_list | split: "|" | uniq | sort %}
+
+{% for category in categories %}
+  {% if category != "" %}
+  <details class="category-group">
+    <summary class="category-head">{{ category }}</summary>
+    <ul class="category-post-list">
+      {% for project in site.projects %}
+        {% if project.categories contains category %}
+        <li class="category-posts"><a href="{{ project.url }}">{{ project.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </details>
+  {% endif %}
 {% endfor %}

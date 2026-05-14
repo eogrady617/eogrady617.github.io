@@ -7,50 +7,26 @@ layout: default
   {%- include projects_sidebar.html -%}
 
   <div class="col-lg-8 col-md-8" id="projects-RHS">
-    <!-- projects Posts -->
-    <div class="card" class="projects-card" id="projects-card">
-      <ul id="posts-ul">
+    <!-- projects Cards -->
+    <div class="card projects-card" id="projects-card">
+      <div id="posts-ul">
         <div class="row" id="child-projects-row">
-          {% for post in paginator.posts %}
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-btn" id="post-btn-{{post.post_id}}">
-            <div class="card projects-post" id="card-projects-post-{{post.post_id}}" align=center>
-              <p id="post-title-text-{{post.post_id}}">{{ post.title }}</p>
+          {% assign sorted_projects = site.projects | sort: "number" %}
+
+          {% for project in sorted_projects %}
+          <a href="{{ project.url }}" class="post-btn" id="post-btn-{{ project.number }}">
+            <div class="card projects-post text-center" id="card-projects-post-{{ project.number }}">
+              {% assign project_thumbnail = project.thumbnail | default: '/assets/img/project-placeholder.svg' %}
+              <img src="{{ project_thumbnail }}" class="project-img" alt="{{ project.title }}">
+              <p id="post-title-text-{{ project.number }}">{{ project.title }}</p>
+              {% if project.summary %}
+              <p class="project-summary">{{ project.summary | strip_html | truncatewords: 18 }}</p>
+              {% endif %}
             </div>
           </a>
           {% endfor %}
         </div>
-      </ul>
+      </div>
     </div>
-
-    <!-- Pagination links -->
-    <div class="row center">
-      {% if paginator.total_pages > 1 %}
-      <ul class="pagination pagination-sm">
-        {% if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a></li>
-        {% else %}
-          <li class="disabled"><span aria-hidden="true">&laquo;</span></li>
-        {% endif %}
-
-        <li><a href="/">First</a></li>
-
-        {% for page in (1..paginator.total_pages) %}
-          {% if page == paginator.page %}
-            <li class="active"><a>{{ page }}<span class="sr-only">(current)</span></a></li>
-          {% elsif page == 1 %}
-            <li><a href="/">{{ page }}</a></li>
-          {% else %}
-            <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
-          {% endif %}
-        {% endfor %}
-
-        <li><a href="/page/{{ paginator.total_pages }}/">Last</a></li>
-
-        {% if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a></li>
-        {% else %}
-          <li class="disabled"><span>&raquo;</span></li>
-        {% endif %}
-      </ul>
-      {% endif %}
+  </div>
 </div>

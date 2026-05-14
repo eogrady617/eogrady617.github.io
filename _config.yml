@@ -5,6 +5,10 @@ collections:
   posts:
     title: Posts
     output: true
+  projects:
+    title: Projects
+    output: true
+    permalink: /projects/:title/
   products:
     title: Products
     output: false
@@ -12,7 +16,7 @@ collections:
     title: Uploads
     output: true
 email: e + LAST NAME + 617 AT gmail DOT com
-description: Your name's webpage, projects, biography, resume, and FAQ
+description: Evan O'Grady's webpage, projects, biography, resume, and FAQ
 baseurl: ''
 url: //eogrady617.github.io
 urls:
@@ -32,10 +36,14 @@ urls:
   url: "/feedback/"
   display: true
 author_logo: profile.png
-author: Your Name Here
-author_bio: Add your bio here. Tell visitors about yourself and your background.
-author_bio2: Add more details about your background, career path, interests, and expertise.
-author_bio3: For a more formal biography, check out <a href="/biography/">my biography</a>.
+author: Evan O'Grady
+author_bio: Hi! I'm currently a Master's student in Quantum Science and Technology at UCLA, 
+  with a background in Computer Engineering. My main interests are optics/photonics, quantum
+  networks, quantum programming, and quantum hardware engineering. I am skilled in scientific 
+  computing and experimental optics.
+author_bio2: My career goals are to work in an industry role related to quantum science 
+  and eventually pursue a PhD.
+author_bio3: ''
 author_location: Los Angeles, CA
 author_website_url: eogrady617.github.io
 author_work_experiences:
@@ -60,8 +68,9 @@ author_education_details:
   visibility: true
 accomplishments:
 - Add your accomplishments and milestones here
-github_username: eogrady617
+#github_username: eogrady617
 linkedin_username: evanjogrady
+orcid_id: 0009-0007-1713-5664
 formspree_email: eogrady617@gmail.com
 new_formspring_endpoint: mkoyazwr
 markdown: kramdown

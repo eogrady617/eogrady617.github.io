@@ -1,5 +1,8 @@
 <article class="card" itemscope itemtype="http://schema.org/projectsPosting">
     <div class="post-card-header" id="post-card-header-{{page.post_id}}">
+    {% if page.thumbnail %}
+    <img src="{{ page.thumbnail }}" class="project-img" alt="{{ page.title }}">
+    {% endif %}
         <!-- <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1> -->
         <div class="post-categories" id="post-categories-{{page.post_id}}">
             <h4 class="post-meta" id="post-meta-{{page.post_id}}">{{ page.summary }}</h4>
@@ -12,7 +15,7 @@
 
             Categories:
             {% for category in categories %}
-              <a href="{{site.baseurl}}/projects/categories/{{category}}">{{category | replace: "_", " "}}</a>
+              <a href="{{ site.baseurl }}/projects/categories/#{{ category | slugify }}">{{ category | replace: "_", " " }}</a>
               {% unless forloop.last %}, {% endunless %}
             {% endfor %}
         </div>

@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="row" id="parent-project-row">
+  {%- include projects_sidebar.html -%}
+
+  <div class="col-lg-8 col-md-8" id="project-RHS">
+    <div class="card" id="project-card">
+      <h1>{{ page.title }}</h1>
+      
+      {% if page.date_display %}
+      <p class="project-date"><small>{{ page.date_display }}</small></p>
+      {% endif %}
+      
+      {% if page.categories %}
+      <p class="project-categories">
+        {% for category in page.categories %}
+        <span class="badge badge-secondary">{{ category }}</span>
+        {% endfor %}
+      </p>
+      {% endif %}
+      
+      {% if page.thumbnail %}
+      <img src="{{ page.thumbnail }}" class="project-header-img" alt="{{ page.title }}">
+      {% endif %}
+
+      <div class="project-content">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</div>
