@@ -60,11 +60,10 @@ author_education_details:
   visibility: true
 accomplishments:
 - Add your accomplishments and milestones here
-github_username: your_github_username
-linkedin_username: your_linkedin_username
-disqus_shortname: your_disqus_shortname
-formspree_email: your.email@example.com
-new_formspring_endpoint: your_formspring_id
+github_username: eogrady617
+linkedin_username: evanjogrady
+formspree_email: eogrady617@gmail.com
+new_formspring_endpoint: mkoyazwr
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
