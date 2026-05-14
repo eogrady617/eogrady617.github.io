@@ -1,6 +1,6 @@
 ---
 title: Laser Frequency Stability Measurement
-number: 3
+number: 4
 date_display: May 2026
 categories:
   - Optics

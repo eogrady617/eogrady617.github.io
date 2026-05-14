@@ -1,6 +1,6 @@
 ---
 title: Electro-Optic Modulator (EOM)
-number: 2
+number: 3
 date_display: May 2026
 categories:
   - RF Electronics
