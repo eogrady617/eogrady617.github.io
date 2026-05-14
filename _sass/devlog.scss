@@ -19,6 +19,8 @@
     display: block;
 }
 
+$projects-panel-offset: 180px;
+
 // On the PROJECTS page //////////
 #parent-projects-row {
   padding: 0px !important;
@@ -36,7 +38,7 @@
 
 #posts-ul {
   padding: 0px !important;
-  max-height: calc(100vh - 180px);
+  max-height: calc(100vh - #{$projects-panel-offset});
   overflow-y: auto;
   overflow-x: hidden;
 }
