@@ -26,7 +26,7 @@ urls:
 - text: Projects
   url: "/projects/"
   display: true
-- text: Resume
+- text: Résumé
   url: "/resume/"
   display: true
 - text: Coursework
@@ -49,23 +49,91 @@ author_website_url: eogrady617.github.io
 author_work_experiences:
 - company_name: The Aerospace Corporation
   company_logo: aero.png
-  dates: Incoming June 2026
+  dates: Incoming Summer 2026
   designation: Photonic Technologies Intern
   description:
   - ''
+  visibility: true
+- company_name: Nova Scholar Education
+  company_logo: ''
+  dates: July 2025 - Present
+  designation: Research Mentor
+  description:
+  - Guide high school students through the process of completing a research project
+  - Provide subject matter expertise to students interested in research related to engineering and computer science
+  - Introduce students to the principles and practice of academic research
+  visibility: true
+- company_name: "Stanford University's Code in Place"
+  company_logo: ''
+  dates: Summer 2025
+  designation: Section Leader
+  description:
+  - Taught fundamentals of Python programming through one of the largest free computer science education initiatives in the world
+  - Successfully led a group of ~15 diverse students through the first half of Stanford's intro to Python course
+  - Gained interpersonal skills, practiced engaging pedagogy, and demonstrated mastery of Python principles
+  visibility: true
+- company_name: IEEE HKN Honors Society
+  company_logo: ''
+  dates: August 2024 – May 2025
+  designation: Tutor/Mentor
+  description:
+  - Held weekly open tutoring hours for peer students in select math and electrical engineering courses
+  - Mentored two underclassmen in professional and academic advice
   visibility: true
 author_education_details:
 - college_logo: ucla.png
   college_name: University of California, Los Angeles
   college_degree: Master's in Quantum Science and Technology
-  description: ''
+  description: 'Relevant Coursework: Quantum Information, Quantum Optics Laboratory, Satellite Quantum Networking'
   visibility: true
 - college_logo: mu.png
   college_name: Manhattan University
   dates: 2021 - 2025
-  college_degree: B.S. in Computer Engineering
-  description: ''
+  college_degree: B.S. in Computer Engineering (Major GPA 3.81)
+  description: 'Magna Cum Laude, HKN Honors Society, Annual Presidential Scholarship, Epsilon Sigma Pi Honors, Dean''s List. Relevant Coursework: Math Methods, Applied Electromagnetics, Electronics, Signals & Systems'
   visibility: true
+author_other_experiences:
+- organization_name: UCLA MQST Laboratory
+  organization_logo: ucla.png
+  dates: January 2026 – Present
+  designation: Quantum Optics Lab Researcher
+  description:
+  - Perform hands-on experiments using modern optical equipment including lasers and fiber optics
+  - Build and characterize optical interferometers, optical cavities, and entangled photon states
+  - Demonstrate random number generation and quantum key distribution
+  - Produce technical reports documenting experimental methods, data analysis, and simulations
+  visibility: true
+- organization_name: National Science Foundation
+  organization_logo: ''
+  dates: May 2024 – May 2025
+  designation: Undergraduate Researcher (IRES Program, Advisor Dr. Yi Wang)
+  description:
+  - Selected as one of 6 undergrads for the NSF's International Research Experience for Students (IRES) program in Zaragoza, Spain
+  - Investigated newest innovations in large language models, object detection, and speech recognition machine learning
+  - Developed an AI-based assistant for the visually impaired using Python
+  - Collaborated with professors and students from the University of Zaragoza, Manhattan University, and City University of New York
+  - Presented results at IEEE SoutheastCon 2025
+  visibility: true
+author_skills:
+  software:
+  - Python
+  - QuTip
+  - Qiskit
+  - C / C++
+  - MATLAB
+  - Unix Shell
+  - PyTorch
+  - Git
+  - PSpice
+  - HFSS
+  technical:
+  - Experimental Quantum Optics
+  - Scientific Computing
+  - Quantum Simulation
+  - Quantum Algorithms
+  - Electronics Design
+  - NMR Spectroscopy
+  - Circuit Analysis
 accomplishments:
 - Add your accomplishments and milestones here
 #github_username: eogrady617

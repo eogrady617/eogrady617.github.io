@@ -67,6 +67,37 @@ layout: default
           </div>
         {% endif %}
 
+        {% if site.author_other_experiences %}
+          <div class="card">
+            <h1 class="card-title"> Research &amp; Projects </h1>
+            <br />
+            {% for exp in site.author_other_experiences %}
+            {% if exp.visibility == true %}
+            <div class="row">
+                    {% if exp.organization_logo %}
+                    <div class="col-md-2">
+                        <img src="/assets/img/{{ exp.organization_logo }}" class="company-logo" />
+                    </div>
+                    <div class="col-md-10">
+                    {% else %}
+                    <div class="col-md-12">
+                    {% endif %}
+                        <h4 class="experience-title"> {{ exp.designation }}</h4>
+                        <h6 class="experience-info"> {{ exp.dates }}: {{ exp.organization_name }}</h6>
+                        <p class="experience-desc">
+                          <ul>
+                            {% for item in exp.description %}
+                              <li>{{item}}</li>
+                            {% endfor %}
+                          </ul>
+                        </p>
+                    </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+
     </div>
     <div class="col-lg-4">
         <div class="card">
@@ -86,6 +117,28 @@ layout: default
               {%- include github_follow_button.html -%}
             {% endif %}
         </div>
+
+        {% if site.author_skills %}
+        <div class="card">
+            <h1> Skills </h1>
+            {% if site.author_skills.software %}
+            <h5>Software</h5>
+            <ul>
+              {% for skill in site.author_skills.software %}
+                <li>{{ skill }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+            {% if site.author_skills.technical %}
+            <h5>Technical</h5>
+            <ul>
+              {% for skill in site.author_skills.technical %}
+                <li>{{ skill }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        {% endif %}
 
         <div class="card">
             <h1> Hobbies </h1>
