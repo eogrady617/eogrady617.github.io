@@ -13,4 +13,4 @@ Under PI [Dr. Jens Palsberg](https://web.cs.ucla.edu/~palsberg/), I assisted on 
 
 My role on the project was to write code in **PennyLane** and **Q#** to implement Shor's Algorithm. The repository can be found [here](https://github.com/palsberg/Quantum-PL-survey).
 
-The paper is currently awaiting publication in ACM Computing Surveys under the name "A Survey of Quantum Programming Languages."
+The paper is currently awaiting publication in ACM Computing Surveys under the name "A Survey of Quantum Programming Languages." [Arxiv](https://arxiv.org/abs/2606.26254)
