@@ -121,22 +121,18 @@ layout: default
         {% if site.author_skills %}
         <div class="card">
             <h1> Skills </h1>
-            {% if site.author_skills.software %}
-            <h5>Software</h5>
-            <ul>
-              {% for skill in site.author_skills.software %}
-                <li>{{ skill }}</li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-            {% if site.author_skills.technical %}
-            <h5>Technical</h5>
-            <ul>
-              {% for skill in site.author_skills.technical %}
-                <li>{{ skill }}</li>
-              {% endfor %}
-            </ul>
-            {% endif %}
+            {% for category in site.author_skills %}
+              {% assign category_name = category[0] %}
+              {% assign category_skills = category[1] %}
+              {% if category_skills %}
+              <h5>{{ category_name | replace: "_", " " | capitalize }}</h5>
+              <ul>
+                {% for skill in category_skills %}
+                  <li>{{ skill }}</li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            {% endfor %}
         </div>
         {% endif %}
 

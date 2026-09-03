@@ -51,10 +51,15 @@ author_website_url: eogrady617.github.io
 author_work_experiences:
 - company_name: The Aerospace Corporation
   company_logo: aero.png
-  dates: Incoming June 2026
+  dates: June 2026 - Present
   designation: Photonic Technologies Intern
   description:
-  - ''
+  - Supported 4 different projects in the areas of quantum sensing, quantum networking, and deep learning.
+  - Performed mode matching and optical alignment into an optical parametric oscillator cavity for squeezed light generation.
+  - Assisted with experiments involving entangled photon sources in a fiber-based quantum networking testbed.
+  - Built instrumentation control and automation software for characterization of a Rydberg atom-based electric field sensor.
+  - Developed implicit neural representations for antenna radiation pattern interpolation.
+
   visibility: true
 - company_name: National Science Foundation
   company_logo: nsf.png
@@ -71,7 +76,7 @@ author_education_details:
 - college_logo: ucla.png
   college_name: University of California, Los Angeles
   college_degree: Master's in Quantum Science and Technology
-  description:
+  description: Theory and lab work in quantum technologies. Specialized in photonics.
   visibility: true
 - college_logo: mu.png
   college_name: Manhattan University
@@ -107,25 +112,32 @@ author_other_experiences:
   - Mentored two underclassmen in professional and academic advice
   visibility: true
 author_skills:
+  technical:
+  - Quantum and Classical Optics
+  - Scientific Computing
+  - Quantum Networking
+  - RF Electronics
+  - Quantum Algorithms
+  - Neural Networks
+  - Scientific Writing
+  
+  instrumentation:
+  - Lasers
+  - Optomechanics
+  - Optical Fibers
+  - Single-Photon Detectors (gmAPDs, SNSPDs)
+  - Acousto-Optic Modulators
+  - RFSoC Boards
+  - Test Equipment (Oscilloscopes, Spectrum Analyzers)
+
   software:
   - Python
-  - QuTip
-  - Qiskit
-  - C / C++
-  - MATLAB
   - Unix Shell
+  - C / C++
   - PyTorch
-  - Git
-  - PSpice
-  - HFSS
-  technical:
-  - Experimental Quantum Optics
-  - Scientific Computing
-  - Quantum Simulation
-  - Quantum Algorithms
-  - Electronics Design
-  - NMR Spectroscopy
-  - Circuit Analysis
+  - Qiskit
+  - PennyLane
+
 accomplishments:
 - Add your accomplishments and milestones here
 #github_username: eogrady617
