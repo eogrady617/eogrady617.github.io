@@ -107,25 +107,32 @@ author_other_experiences:
   - Mentored two underclassmen in professional and academic advice
   visibility: true
 author_skills:
+  technical:
+  - Quantum and Classical Optics
+  - Scientific Computing
+  - Quantum Networking
+  - RF Electronics
+  - Quantum Algorithms
+  - Neural Networks
+  - Scientific Writing
+  
+  instrumentation:
+  - Lasers
+  - Optomechanics
+  - Optical Fibers
+  - Single-Photon Detectors (gmAPDs, SNSPDs)
+  - Acousto-Optic Modulators
+  - RFSoC Boards
+  - Test Equipment (Oscilloscopes, Spectrum Analyzers)
+
   software:
   - Python
-  - QuTip
-  - Qiskit
-  - C / C++
-  - MATLAB
   - Unix Shell
+  - C / C++
   - PyTorch
-  - Git
-  - PSpice
-  - HFSS
-  technical:
-  - Experimental Quantum Optics
-  - Scientific Computing
-  - Quantum Simulation
-  - Quantum Algorithms
-  - Electronics Design
-  - NMR Spectroscopy
-  - Circuit Analysis
+  - Qiskit
+  - PennyLane
+
 accomplishments:
 - Add your accomplishments and milestones here
 #github_username: eogrady617
